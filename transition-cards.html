@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment done by Muhammad annas moiz </title>
+    <style>
+        body{
+            background-color: aquamarine;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-box{
+            width: 150px;
+            height: 500px;
+            margin: 10px;
+            border-radius: 50px;
+            background:url(justice-league-character-posters_yqxq.1080.webp);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition:width 0.5s;
+        }
+        .img-box:nth-child(2){
+            background: url(justice-league-poster-of-ben-afflecks-batman_dmzr.1080.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box:nth-child(3){
+            background: url(justice-league-poster-of-ezra-millers-the-flash_evee.1080.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box:nth-child(4){
+            background: url(justice-league-poster-of-gal-gadots-wonder-woman_n8nv.1080.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box:nth-child(5){
+            background: url(justice-league-poster-of-ray-fishers-cyborg_k8tp.1080.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .img-box h2{
+            color: aliceblue;
+            position:absolute ;
+            bottom: 0;
+            left: 30px;
+            opacity: 0;
+            transition: bottom 0.5s, opacity 0.5s;
+        }
+        .img-box:hover{
+            width: 350px;
+            cursor: pointer;
+        }
+        .img-box:hover h2{
+            opacity: 1;
+            bottom: 25px;
+        }
+        footer{
+            background-color: black;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        footer nav ul{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        footer nav ul li{
+            margin: 20px;
+            list-style: none;
+        }
+        footer nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <header><h1>Assignment by Muhammad Annas Moiz</h1></header>
+    <div class="container">
+        <div class="gallery">
+            <div class="img-box"><h2>AQUAMAN</h2></div>
+            <div class="img-box"><h2>BATMAN</h2></div>
+            <div class="img-box"><h2>FLASH</h2></div>
+            <div class="img-box"><h2>WONDER WOMEN</h2></div>
+            <div class="img-box"><h2>CYBORG</h2></div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Aquaman" target="_blank">AQUAMAN</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Batman" target="_blank">BATMAN</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Flash_(Barry_Allen)" target="_blank">FLASH</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wonder_Woman" target="_blank">WONDER WOMEN</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cyborg_(DC_Comics)" target="_blank">CYBORG</a></li>
+             </ul>
+        </nav>
+    </footer>
+</body>
+</html>
